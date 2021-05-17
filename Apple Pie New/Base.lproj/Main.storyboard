@@ -19,9 +19,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbT-gz-D3A">
                                 <rect key="frame" x="0.0" y="0.0" width="1180" height="800"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="awr-J5-Ae9">
-                                        <rect key="frame" x="0.0" y="0.0" width="1180" height="540"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="awr-J5-Ae9">
+                                        <rect key="frame" x="0.0" y="0.0" width="1180" height="510"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zg-fy-aYE">
+                                        <rect key="frame" x="0.0" y="510" width="1180" height="30"/>
+                                        <state key="normal" title="Words to guess"/>
+                                        <connections>
+                                            <segue destination="e8P-Ep-Eco" kind="presentation" id="IVw-Dj-yVS"/>
+                                        </connections>
+                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mAf-Gf-1yD">
                                         <rect key="frame" x="0.0" y="540" width="1180" height="260"/>
                                         <subviews>
@@ -416,6 +423,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="85"/>
+        </scene>
+        <!--List of Words-->
+        <scene sceneID="Fi3-Qf-GbM">
+            <objects>
+                <viewController id="mUY-yk-Bjn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqd-3P-xpv">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="780"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cDX-Zq-aYd">
+                                <rect key="frame" x="301" y="324" width="102" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM0-XW-uhL">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-zF-I2E">
+                                        <rect key="frame" x="0.0" y="70" width="102" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-ix-Qzb">
+                                        <rect key="frame" x="0.0" y="140" width="102" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp8-Bo-q7X">
+                                        <rect key="frame" x="0.0" y="210" width="102" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OOO-QN-TAW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cDX-Zq-aYd" firstAttribute="centerY" secondItem="OOO-QN-TAW" secondAttribute="centerY" id="LeV-o2-jO5"/>
+                            <constraint firstItem="cDX-Zq-aYd" firstAttribute="centerX" secondItem="OOO-QN-TAW" secondAttribute="centerX" id="eDu-TD-1FP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="List of Words" id="Xwg-86-aVp">
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="ZhR-du-aMa">
+                            <connections>
+                                <segue destination="Vjz-Wf-Cye" kind="unwind" unwindAction="unwindWithSegue:" id="eQI-DB-qJX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxI-Bm-Jui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Vjz-Wf-Cye" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1521.35593220339" y="84.878048780487802"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0yQ-Na-XLj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e8P-Ep-Eco" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="P4L-Pn-IHX">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mUY-yk-Bjn" kind="relationship" relationship="rootViewController" id="7XE-xt-sig"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFU-WI-pBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812.54237288135596" y="84.878048780487802"/>
         </scene>
     </scenes>
     <resources>
