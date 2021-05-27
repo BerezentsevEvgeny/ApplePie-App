@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var letterButtons: [UIButton]!
     
-    
+    // Слова для игры
     var listOfWords = ["work", "coffee", "hello", "car"]
+    
+    // Колличество попыток
     let incorrectMovesAllowed = 7
     var totalWins = 0 {
         didSet {
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
             newRound()
         }
     }
+    
+    // Текущая игра
     var currentGame: Game!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +45,7 @@ class ViewController: UIViewController {
         updateGameState()
     }
     
-    
-    
+    // Новый раунд
     func newRound() {
         if !listOfWords.isEmpty {
             let newWord = listOfWords.removeFirst()
@@ -54,13 +57,14 @@ class ViewController: UIViewController {
         }
     }
     
+    // Активация кнопок
     func enableLetterButtons(_ enable: Bool) {
         for button in letterButtons {
             button.isEnabled = enable
         }
     }
     
-    
+    // Обновление интерфейса
     func updateUI() {
         var letters = [String]()
         for letter in currentGame.formattedWord {
@@ -72,7 +76,7 @@ class ViewController: UIViewController {
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
     
-    
+    // Обновление состояния игры
     func updateGameState() {
         if currentGame.incorrectMovesRemaining == 0 {
             totalLosses += 1

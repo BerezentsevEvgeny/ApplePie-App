@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// Модель
 struct Game {
     var word: String
     var incorrectMovesRemaining: Int
