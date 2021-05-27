@@ -58,8 +58,7 @@
 		633237EA25CECA2C00FDE690 /* Apple Pie New */ = {
 			isa = PBXGroup;
 			children = (
-				633237EB25CECA2C00FDE690 /* AppDelegate.swift */,
-				633237ED25CECA2C00FDE690 /* SceneDelegate.swift */,
+				63A065F7265F64CC00ED82CA /* Support */,
 				633237EF25CECA2C00FDE690 /* ViewController.swift */,
 				6332380225CEDF0B00FDE690 /* Game.swift */,
 				633237F125CECA2C00FDE690 /* Main.storyboard */,
@@ -68,6 +67,15 @@
 				633237F925CECA2D00FDE690 /* Info.plist */,
 			);
 			path = "Apple Pie New";
+			sourceTree = "<group>";
+		};
+		63A065F7265F64CC00ED82CA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				633237EB25CECA2C00FDE690 /* AppDelegate.swift */,
+				633237ED25CECA2C00FDE690 /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
