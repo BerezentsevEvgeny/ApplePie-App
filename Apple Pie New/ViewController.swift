@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var letterButtons: [UIButton]!
     
-    
+    // 
     var listOfWords = ["work", "coffee", "hello", "car"]
     let incorrectMovesAllowed = 7
     var totalWins = 0 {
